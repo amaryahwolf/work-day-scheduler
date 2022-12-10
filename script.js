@@ -1,14 +1,14 @@
 var today = dayjs();
 var saveButtonEl = $(".saveBtn");
-var hour9Events = $("#hour-9");
-var hour10Events = $("#hour-10");
-var hour11Events = $("#hour-11");
-var hour12Events = $("#hour-12");
-var hour13Events = $("#hour-13");
-var hour14Events = $("#hour-14");
-var hour15Events = $("#hour-15");
-var hour16Events = $("#hour-16");
-var hour17Events = $("#hour-17");
+var hour9 = $("#hour-9");
+var hour10 = $("#hour-10");
+var hour11 = $("#hour-11");
+var hour12 = $("#hour-12");
+var hour13 = $("#hour-13");
+var hour14 = $("#hour-14");
+var hour15 = $("#hour-15");
+var hour16 = $("#hour-16");
+var hour17 = $("#hour-17");
 
 
 
@@ -28,19 +28,19 @@ $(function () {
   
   saveButtonEl.on("click", function () {
 
-    console.log("9am: ", hour9Events.children("textarea").val());
-    console.log("10am: ", hour10Events.children("textarea").val());
-    console.log("11am: ", hour11Events.children("textarea").val());
+    // console.log("9am: ", hour9Events.children("textarea").val());
+    // console.log("10am: ", hour10Events.children("textarea").val());
+    // console.log("11am: ", hour11Events.children("textarea").val());
 
-    localStorage.setItem("9am: ", hour9Events.children("textarea").val());
-    localStorage.setItem("10am: ", hour10Events.children("textarea").val());
-    localStorage.setItem("11am: ", hour11Events.children("textarea").val());
-    localStorage.setItem("12pm: ", hour12Events.children("textarea").val());
-    localStorage.setItem("1pm: ", hour13Events.children("textarea").val());
-    localStorage.setItem("2pm: ", hour14Events.children("textarea").val());
-    localStorage.setItem("3pm: ", hour15Events.children("textarea").val());
-    localStorage.setItem("4pm: ", hour16Events.children("textarea").val());
-    localStorage.setItem("5pm: ", hour17Events.children("textarea").val());
+    localStorage.setItem("9am: ", hour9.children("textarea").val());
+    localStorage.setItem("10am: ", hour10.children("textarea").val());
+    localStorage.setItem("11am: ", hour11.children("textarea").val());
+    localStorage.setItem("12pm: ", hour12.children("textarea").val());
+    localStorage.setItem("1pm: ", hour13.children("textarea").val());
+    localStorage.setItem("2pm: ", hour14.children("textarea").val());
+    localStorage.setItem("3pm: ", hour15.children("textarea").val());
+    localStorage.setItem("4pm: ", hour16.children("textarea").val());
+    localStorage.setItem("5pm: ", hour17.children("textarea").val());
   })
   
   //
@@ -50,14 +50,36 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
+  // for hour 9, if today = 9am, then remove past and future class, else if today is before 9am, then remove past and present class, else if today is after 9am, then remove present and future class
+
+
+  if (today > 9) {
+    hour9.removeClass("present")
+    hour9.removeClass("future")
+  } else if (today < 9) {
+    hour9.removeClass("past")
+    hour9.removeClass("present")
+  } else {
+    hour9.removeClass("past")
+    hour9.removeClass("future")
+  }
+
+  
+  
+
 
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
+
+  
+
   //
   // TODO: Add code to display the current date in the header of the page.
   
   $("#currentDay").text(today.format("MMM D, YYYY"));
 
 });
+
+
