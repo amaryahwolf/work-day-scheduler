@@ -127,17 +127,33 @@ $(function () {
     hour17.removeClass("past")
   }
 
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-
   var hour9Storage = localStorage.getItem("9am: ");
   hour9.children("textarea").append(hour9Storage);
 
-  //
-  // TODO: Add code to display the current date in the header of the page.
-  
+  var hour10Storage = localStorage.getItem("10am: ");
+  hour10.children("textarea").append(hour10Storage);
+
+  var hour11Storage = localStorage.getItem("11am: ");
+  hour11.children("textarea").append(hour11Storage);
+
+  var hour12Storage = localStorage.getItem("12pm: ");
+  hour12.children("textarea").append(hour12Storage);
+
+  var hour13Storage = localStorage.getItem("1pm: ");
+  hour13.children("textarea").append(hour13Storage);
+
+  var hour14Storage = localStorage.getItem("2pm: ");
+  hour14.children("textarea").append(hour14Storage);
+
+  var hour15Storage = localStorage.getItem("3pm: ");
+  hour15.children("textarea").append(hour15Storage);
+
+  var hour16Storage = localStorage.getItem("4pm: ");
+  hour16.children("textarea").append(hour16Storage);
+
+  var hour17Storage = localStorage.getItem("5pm: ");
+  hour17.children("textarea").append(hour17Storage);
+
   $("#currentDay").text(today.format("MMM D, YYYY"));
 
 });
