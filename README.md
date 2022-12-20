@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 To use this work day scheduler, enter an event or activity into the text area, and select the blue save button. 
-![Screenshot of application](.assets/work-day-scheduler-screenshot.png)
+![Screenshot of application](/assets/work-day-scheduler-screenshot.png)
 
 ## Credits
 Collaborators: 
