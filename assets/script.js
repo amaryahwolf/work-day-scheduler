@@ -27,10 +27,10 @@ $(function () {
     localStorage.setItem("4pm: ", hour16.children("textarea").val());
     localStorage.setItem("5pm: ", hour17.children("textarea").val());
   })
-  
+
   if (currentHour === 9) {
     hour9.removeClass("past")
-    hour9.removeClass("future") 
+    hour9.removeClass("future")
   } else if (currentHour < 9) {
     hour9.removeClass("future")
     hour9.removeClass("present")
@@ -41,7 +41,7 @@ $(function () {
 
   if (currentHour === 10) {
     hour10.removeClass("past")
-    hour10.removeClass("future") 
+    hour10.removeClass("future")
   } else if (currentHour < 10) {
     hour10.removeClass("future")
     hour10.removeClass("present")
@@ -52,7 +52,7 @@ $(function () {
 
   if (currentHour === 11) {
     hour11.removeClass("past")
-    hour11.removeClass("future") 
+    hour11.removeClass("future")
   } else if (currentHour < 11) {
     hour11.removeClass("future")
     hour11.removeClass("present")
@@ -63,7 +63,7 @@ $(function () {
 
   if (currentHour === 12) {
     hour12.removeClass("past")
-    hour12.removeClass("future") 
+    hour12.removeClass("future")
   } else if (currentHour < 12) {
     hour12.removeClass("future")
     hour12.removeClass("present")
@@ -74,7 +74,7 @@ $(function () {
 
   if (currentHour === 13) {
     hour13.removeClass("past")
-    hour13.removeClass("future") 
+    hour13.removeClass("future")
   } else if (currentHour < 13) {
     hour13.removeClass("future")
     hour13.removeClass("present")
@@ -85,7 +85,7 @@ $(function () {
 
   if (currentHour === 14) {
     hour14.removeClass("past")
-    hour14.removeClass("future") 
+    hour14.removeClass("future")
   } else if (currentHour < 14) {
     hour14.removeClass("future")
     hour14.removeClass("present")
@@ -96,7 +96,7 @@ $(function () {
 
   if (currentHour === 15) {
     hour15.removeClass("past")
-    hour15.removeClass("future") 
+    hour15.removeClass("future")
   } else if (currentHour < 15) {
     hour15.removeClass("future")
     hour15.removeClass("present")
@@ -107,7 +107,7 @@ $(function () {
 
   if (currentHour === 16) {
     hour16.removeClass("past")
-    hour16.removeClass("future") 
+    hour16.removeClass("future")
   } else if (currentHour < 16) {
     hour16.removeClass("future")
     hour16.removeClass("present")
@@ -118,7 +118,7 @@ $(function () {
 
   if (currentHour === 17) {
     hour17.removeClass("past")
-    hour17.removeClass("future") 
+    hour17.removeClass("future")
   } else if (currentHour < 17) {
     hour17.removeClass("future")
     hour17.removeClass("present")
